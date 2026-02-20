@@ -1,0 +1,25 @@
+{
+  "name": "play-party",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report",
+    "test:busqueda-productos": "playwright test tests/specs/busqueda-productos.spec.ts",
+    "test:busqueda-productos:headed": "playwright test tests/specs/busqueda-productos.spec.ts --headed",
+    "test:qa": "BASE_URL=https://farmacityarqa.myvtex.com playwright test",
+    "browsers:update": "playwright install --with-deps"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@types/node": "^25.3.0"
+  }
+}
